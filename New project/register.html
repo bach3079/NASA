@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/New project/register.css">
+    <script src="/New project/login and register.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2>Registeration</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter full name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input id="registerUsername" type="text" placeholder="Enter username" name="uname" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your valid email address" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" placeholder="Enter phone number" name="phone" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input id="registerPassword" type="password" placeholder="Enter new password" name="password"
+                        required minlength="6" maxlength="18">
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input id="registerConfirmPassword" type="password" placeholder="Confirm your password"
+                        name="confirmpassword" required minlength="6" maxlength="18">
+                </div>
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="alert">
+                <p> By clicking Register, you agree to our <a href="#">Terms</a> , <a href="#">Privacy Policy</a> and <a
+                        href="#">Cookies Policy</a> . You may receive SMS notifications from us and OPT out any time.
+                </p>
+            </div>
+        </form>
+        <div class="button-container">
+            <button onclick="register()" type="submit">Register</button>
+        </div>
+        <div class="button">
+            <a href="/New project/login.html">
+                <button>Already have account? Login</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
