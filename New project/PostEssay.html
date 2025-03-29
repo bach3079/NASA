@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -9,10 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="TCT3.js"></script>
-    <link rel="stylesheet" href="TCT3.css" />
-    <title>oronal Mass Ejection (CME) Analysis</title>
+    <title>Post Essay</title>
+    <link rel="stylesheet" href="Essay.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bd-navbar sticky-top">
         <div class="container-fluid">
@@ -75,26 +75,14 @@
         <img src="https://sohanews.sohacdn.com/2017/photo-1-1494992954677.jpg" alt="Image 2">
         <img src="https://usth.edu.vn/wp-content/uploads/2021/09/nganh-vu-tru-1.png" alt="Image 3">
     </div><br>
-    <div class="container mt-4">
-        <h2>Coronal Mass Ejection (CME) Analysis</h2>
-        <div id="cme-data" class="row"></div>
-    </div>
-    <footer>
-            <div class="footer-content">
-                <p>© 2024 Your Company Name. All Rights Reserved.</p>
-                <div class="social-media">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
-                </div>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
-                    <p>Phone: (123) 456-7890</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                </div>
-            </div>
-    </footer>
+    <h1>Post a New Essay</h1>
+    <form id="postForm">
+        <input type="text" id="title" placeholder="Essay Title" required>
+        <textarea id="content" placeholder="Write your essay here..." required></textarea>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button type="submit">Post</button>
+    </form>
+    <script src="Essay.js"></script>
 </body>
+
 </html>
