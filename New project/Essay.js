@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 title,
                 content,
                 image: imageUpload ? URL.createObjectURL(imageUpload) : "",
-                views: 0, // Đếm lượt xem
+                views: 0, 
                 date: new Date().toISOString()
             };
 
